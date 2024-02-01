@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="/js/script.js"></script>
   <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
   <title>Frontend Mentor | Calculator app</title>
 </head>
@@ -16,7 +17,14 @@
     <section class="header">
       <h1>Calc</h1>
       
-      
+
+      <div class="theme-section">
+      <h1 class="theme-text">Theme</h1>
+      <div>
+        <div class="theme-degrees">
+        <h1>1</h1>
+        <h1>2</h1>
+        <h1>3</h1></div>
       <div class="radio-input">
         
         <input type="radio" id="value-1" name="value-radio" value="value-1">
@@ -29,39 +37,39 @@
         <div class="circle">
         </div>
       </div>
-       
+       </div></div>
     </section>
 
     <section class="screen">
-      <h1>
-        2004,3423423
+      <h1 class="text-space">
+        
       </h1>
     </section>
 
     <div class="numbers-screen">
     <section class="numbers">
-      <button> 9</button>
-      <button> 8</button>
-      <button> 7</button>
-      <button style="font-size: 29px;"> DEL</button>
-      <button> 6</button>
-      <button> 5</button>
-      <button> 4</button>
-      <button>+</button>
-      <button>1</button>
-      <button>2</button>
-      <button>3</button>
-      <button>-</button>
-      <button>.</button>
-      <button>0</button>
-      <button>/</button>
-      <button>*</button>
+      <button class="num"> 9</button>
+      <button class="num"> 8</button>
+      <button class="num"> 7</button>
+      <button style="font-size: 22px;" class="blue" id="del"> DEL</button>
+      <button class="num"> 6</button>
+      <button class="num"> 5</button>
+      <button class="num"> 4</button>
+      <button class="num">+</button>
+      <button class="num">1</button>
+      <button class="num">2</button>
+      <button class="num">3</button>
+      <button class="num">-</button>
+      <button class="num">.</button>
+      <button class="num">0</button>
+      <button class="num">/</button>
+      <button class="num">*</button>
      
     </section>
 
     <section class="numbers">
-    <button class="double-btn">RESET</button>
-    <button class="double-btn"> =</button>
+    <button class="double-btn blue" id="Reset">RESET</button>
+    <button class="double-btn orange" id="Equality"> =</button>
     </section>
 
      </div>
@@ -72,7 +80,10 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Judy Essam</a>.
   </div>
+
+
+  <script defer src="/js/script.js"></script>
 </body>
 </html>

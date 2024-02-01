@@ -10,7 +10,7 @@ body{
     align-items: center;
    background-color:  hsl(0, 0%, 90%);
    font-family: 'League Spartan';
-   font-weight: 700;;
+   font-weight: 900;
 }
 
 
@@ -26,34 +26,36 @@ body{
 }
 
 .header h1{
-    font-size: 16px;
+  
+    font-size: 15px;
 
 }
 
 
 .numbers{
     display: inline-grid;
-    grid-template-columns: auto auto auto auto;
-    row-gap: 1rem;
-    column-gap: 1rem;
+    grid-template-columns: auto auto auto auto ;
+    row-gap: 0.7rem;
+    column-gap: 0.5rem;
     position: relative;
-    left: 8px;
+    left: 7px;
     
 }
 
 .double-btn{
-  width: 11.3rem;
+  width: 11.8rem;
   margin-top: 1rem;
+  font-size: 22px;
 }
 
 .numbers-screen{
   position: relative;
- 
+
   background-color: hsl(0, 5%, 81%);
   display: flex;
   flex-direction: column;
   width: 25rem;
-  height: 22rem;
+  height: 20rem;
   border-radius: 10px;
   padding-top: 1rem;
   
@@ -65,23 +67,37 @@ button{
   border-radius: 10px;
   border: none;
   font-size: 32px;
-  
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
   position: relative;
-  padding: 0 20px;
+  /* padding: 0 20px; */
   font-size: 30px;
   text-transform: uppercase;
   border: 0;
-  box-shadow: hsl(0, 5%, 81%) 0px 7px 0px 0px;
-  background-color: hsl(0, 0%, 90%);
+  box-shadow: hsl(35, 11%, 61%) 0px 4px 0px 0px;
+  background-color: hsl(45, 7%, 89%);
   border-radius: 12px;
   overflow: hidden;
   transition: 31ms cubic-bezier(.5, .7, .4, 1);
   
-  
+  width: 5rem;
+  height: 3rem;
+
+}
+
+.blue{
+  box-shadow: hsl(185, 58%, 25%) 0px 4px 0px 0px;
+  background-color: hsl(185, 42%, 37%);
+  color: white;
+}
+
+
+.orange{
+  box-shadow: hsl(25, 99%, 27%) 0px 4px 0px 0px;
+  background-color: hsl(25, 98%, 40%);
+  color: white;
 }
 
 button:active {
@@ -93,8 +109,7 @@ button:active {
 
 
 .radio-input {
-  
-    margin-right: 2rem;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,19 +119,20 @@ button:active {
   }
   
   .radio-input input {
-    
+   overflow: visible;
     appearance: none;  
     /* width: 0.6em;
     height: 1em; */
     background-color: hsl(0, 5%, 81%);
     /* box-shadow: inset 2px 5px 10px rgb(5, 5, 5); */
-    border-radius: 50%;
+    border-radius: 80%;
     transition: .4s ease-in-out;
     position: relative;
     top: 0.012em;
     left: 0.3em;
-    width: 0.6em;
-    height: 0.6em 
+    width: 0.5em;
+    height: 1.3em;
+   
   }
   
   .radio-input input:hover {
@@ -128,9 +144,9 @@ button:active {
   .radio-input .circle {
     position: relative;
     top: 0.012em;
-    left: -0.3em;
-    width: 0.6em;
-    height: 0.6em;
+    left: -0.2em;
+    width: 0.8em;
+    height: 0.8em;
     background-color: yellow;
     scale: 0;
     border-radius: 10px;
@@ -169,3 +185,26 @@ button:active {
     align-self: center;
     margin-right: 1rem;
   }
+
+.theme-degrees{
+  display: flex;
+ 
+}
+
+.theme-degrees h1{
+  padding: 6.5px;
+}
+
+  .theme-section{
+    display: flex;
+    
+  }
+
+ .theme-text{
+  margin-right: 1rem;
+  position: relative;
+  top: 60%;
+  padding-right: 5px;
+  font-size: 14px;
+ }
+ 
